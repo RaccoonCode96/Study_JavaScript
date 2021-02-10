@@ -39,7 +39,7 @@ var age; // var hoisting (move declaration from bottom to top) 제일 위로 올
 // num = 4;
 // let num;
 
-// 3. constants
+// 3. constant (read only)
 // favor immutable data type always for a few reasons:
 // - security
 // - thread safety

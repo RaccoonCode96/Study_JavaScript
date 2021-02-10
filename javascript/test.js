@@ -23,7 +23,6 @@ var age; // var만 있으면 무조건 호출 가능해짐 순서 상관 없이
 
 const k = 'str'
 console.log(k + 'string'); // strstring
-console.log(k - 'string'); // strstring
 console.log(k + 3); // str3
 console.log(k * 3); // NaN
 console.log(k / 3); // NaN
