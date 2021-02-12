@@ -230,5 +230,20 @@ const calculate = (command, a, b) => {
 console.log(calculate('add', 5, 3))
 // string으로 안하고 바로 그냥 치고 싶으면 command 부분을 callback  함수로 모두 만들어서 하면 됨
 
-
-
+function calculate1 (command, a, b) {
+    switch (command) {
+        case 'add':
+            return a + b;
+        case 'substract':
+            return a - b;
+        case 'divide':
+            return a / b;
+        case 'multiply':
+            return a * b;
+        case 'remainder':
+            return a % b;
+        default:
+            throw Error('unknown command')
+    }
+}
+console.log(calculate1('add', 2, 3))
