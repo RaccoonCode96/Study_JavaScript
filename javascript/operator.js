@@ -1,3 +1,4 @@
+'use strict';
 // 1. String concatenation(문자 연쇄)
 console.log('--------1. String concatenation---------');
 console.log('my' + 'cat'); // mycat
