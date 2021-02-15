@@ -1,29 +1,22 @@
 'use strict';
 
-// console.log(globalName); // error
-// globalName = 3
-// console.log(globalName); // error
-let globalName = 'globalName';
+const raccoon1 = ['tom', 'jerry', 'snoopy', 'micky', 'miny', 'snoopy']
+const raccoon2 = ['kim', 'park', 'lee']
+const raccoon3 = ['1', '2', '3']
+
+console.log(raccoon1.length)
+console.log(raccoon1.toString())
+console.log(raccoon1.toLocaleString())
+console.log(raccoon1.concat(raccoon2))
+console.log(raccoon1.concat(raccoon2, raccoon3))
+console.log(raccoon1.join("|"))
+console.log(raccoon1.slice(1, 3))
+console.log(raccoon1.indexOf('snoopy', 2))
+console.log(raccoon1.unshift('a', 'b', 'c'))
+console.log(raccoon1)
 
 
-{
-   let name = 'raccoon';
-    console.log(name);
-    console.log(globalName);
-    console.log(age); // undifined 출력
+// pop push reverse shift , sort, splice, unshift
 
-}
 
-console.log(name)
-console.log(globalName);
-console.log(age); // undifined 로 결과 출력
-age = 4 // 변수에 값 할당 먼저 함
-console.log(age); // 4 출력
-var age; // var만 있으면 무조건 호출 가능해짐 순서 상관 없이
 
-const k = 'str'
-console.log(k + 'string'); // strstring
-console.log(k + 3); // str3
-console.log(k * 3); // NaN
-console.log(k / 3); // NaN
-console.log(k - 3); // NaN

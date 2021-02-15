@@ -36,7 +36,7 @@ delete raccoon.hasJob; // 삭제도 가능
 console.log(raccoon.hasJob);
 // object = { key : value};
 
-// 2. Compyted properties (계산된 변수)
+// 2. Computed properties (계산된 변수)
 console.log('2. --------------Compyted properties-------------')
 // key should be always string
 console.log(raccoon.name); // dot '.'을 통해서 변수 접근 가능함
@@ -55,7 +55,7 @@ function printValue(obj, key) {
  // 3. Property value shorthand
 console.log(' --------------3. Property value shorthand-------------')
  // object 생성시 동일한 key값을 계속해서 써서 생성해야하는 불편함이 생김 ->
- // function을 정의 object 생성기를 만듬 -> 결굴에는 하는 기능은 결국 template기능인 class 와 같음
+ // function을 정의 object 생성기를 만듬 -> 기능은 결국 template기능인 class 와 같음
  // 지금은 
 const person1 = { name: 'bob', age: 2};
 const person2 = { name: 'steve', age: 3};
