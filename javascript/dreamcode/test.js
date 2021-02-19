@@ -16,7 +16,6 @@ console.log(raccoon1.unshift('a', 'b', 'c'))
 console.log(raccoon1)
 
 
-// pop push reverse shift , sort, splice, unshift
 
 
 
