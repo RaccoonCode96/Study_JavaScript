@@ -12,7 +12,7 @@ document.title = "I own you now";
 // }
 
 // function handleResize(event) {
-//     console.log(event)
+    // console.log(event)
 // }
 
 function handleClick(){
