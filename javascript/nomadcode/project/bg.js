@@ -2,13 +2,13 @@
 
 const body = document.querySelector("body");
 
-const IMG_NUMBER = 3;
+const IMG_NUMBER = 5;
 
 // function handleImgLoad() {
 //     console.log("finished loading");
 // }
 
-function painImage(imgNumber) {
+function paintImage(imgNumber) {
     const image = new Image();
     image.src = `/nomadcode/project/imgs/${imgNumber + 1}.jpg`;
     image.classList.add("bgImage");
@@ -24,7 +24,7 @@ function genRandom() { // floor 버림, ceil 올림
 
 function init() {
     const randomNumber = genRandom();
-    painImage(randomNumber)
+    paintImage(randomNumber)
 }
 
 init();
