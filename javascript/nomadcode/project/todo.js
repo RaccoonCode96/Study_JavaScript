@@ -6,6 +6,7 @@ const toDoForm = document.querySelector(".js-todoForm"),
 let idNumber = 1
 const TODOS_LS = "toDos";
 
+
 let toDos = []; // 변해야 됨으로
 function deleteToDo(event) {
     const btn = event.target;
@@ -36,7 +37,7 @@ function paintToDo(text) {
     let newId = idNumber
     // const newId = toDos.length + 1; // 중간이나 처음 id를 지우면 중복 id가 생김
     // const newId = Date.now()// 새로 고침시 같은 아이디 
-    delBtn.innerText = "❌";
+    delBtn.innerText = "✖";
     delBtn.addEventListener("click", deleteToDo);
     span.innerText = text
     li.appendChild(delBtn);
@@ -67,8 +68,8 @@ function loadToDos() {
         parsedToDos.forEach((toDo) => {
             paintToDo(toDo.text);
             });
-        }
-    }
+        };
+    } 
 
 
 function init() {

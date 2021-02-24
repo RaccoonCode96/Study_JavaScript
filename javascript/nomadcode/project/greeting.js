@@ -4,7 +4,8 @@ const form = document.querySelector(".js-form"),
 	greeting = document.querySelector(".js-greetings");
 
 const USER_LS = "currentUser",
-	SHOWING_CN = 	"showing";
+	SHOWING_CN = "showing",
+	INVISIBLE_CN = "form";
 
 function saveName(text) {
 	localStorage.setItem(USER_LS, text);
@@ -23,14 +24,18 @@ function askForName() {
 }
 
 function paintGreeting(text) {
+	const toDoForm = document.querySelector(".js-todoForm");
 	form.classList.remove(SHOWING_CN);
 	greeting.classList.add(SHOWING_CN);
-	greeting.innerText = `Hello! ${text}`; 
+	greeting.innerText = `Have a good day!  ${text}`;
+	toDoForm.classList.add(SHOWING_CN); 
 }
 
 function loadName() {
 	const currentUser = localStorage.getItem(USER_LS);
 	if(currentUser === null) {
+		const TODOS_LS = "toDos"; 
+		localStorage.removeItem(TODOS_LS);
 		askForName();
 	} else {
 		paintGreeting(currentUser);

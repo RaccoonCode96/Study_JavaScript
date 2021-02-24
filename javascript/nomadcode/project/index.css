@@ -1,13 +1,86 @@
-body {
-  background-color: #353b48;
+* {
+  box-sizing: border-box;
 }
 
-.btn {
+html {
+  font-size: 40px;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 4rem;
+  margin: 300px auto 0;
+}
+
+input {
+  text-align: center;
+  height: 40px;
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 5px 20px;
+  display: block;
+  background: 0;
+  outline: transparent;
+  border: 0;
+  border-bottom: 3px solid aliceblue;
+  color: aliceblue;
+  font-size: 0.7rem;
+}
+
+.question-name {
+  font-size: 1.3rem;
+}
+
+.question-todo {
+  font-size: 1rem;
+}
+
+.js-greetings {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+button {
   cursor: pointer;
+  background: transparent;
+  font-size: 0.2em;
+  color: aliceblue;
+  border-color: aliceblue;
+  border-radius: 100%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+.js-todoList {
+  height: 260px;
+  overflow: hidden;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 10px 20px;
 }
 
 body {
-  color: #7f8c8d;
+  min-width: 650px;
+  background-color: #353b48;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.js-weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .clicked {
@@ -33,11 +106,13 @@ body {
 }
 
 .bgImage {
+  min-width: 500px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
   z-index: -1;
   animation: fadeIn 0.5s linear;
 }
