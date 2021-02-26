@@ -6,16 +6,25 @@ html {
   font-size: 40px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 h1 {
   font-weight: normal;
-  font-size: 4rem;
-  margin: 300px auto 0;
+  font-size: 9vw;
+  margin: 20vw auto 0;
 }
 
 input {
   text-align: center;
-  height: 40px;
-  width: 600px;
+  height: 5vh;
+  width: 50vw;
   margin: 0 auto;
   padding: 0 20px 5px 20px;
   display: block;
@@ -24,26 +33,29 @@ input {
   border: 0;
   border-bottom: 3px solid aliceblue;
   color: aliceblue;
-  font-size: 0.7rem;
+  font-size: 2vw;
+  animation: fadeIn 0.5s linear;
 }
 
 .question-name {
-  font-size: 1.3rem;
+  font-size: 3vw;
 }
 
 .question-todo {
-  font-size: 1rem;
+  font-size: 3vw;
+  animation: fadeIn 0.5s linear;
 }
 
 .js-greetings {
-  font-size: 1.5rem;
-  margin: 10px;
+  font-size: 3vw;
+  margin: 0.3vw;
+  animation: fadeIn 0.5s linear;
 }
 
 button {
   cursor: pointer;
   background: transparent;
-  font-size: 0.2em;
+  font-size: 0.5vw;
   color: aliceblue;
   border-color: aliceblue;
   border-radius: 100%;
@@ -54,25 +66,30 @@ button {
 span {
   margin: 0;
   padding: 0;
-  font-size: 0.7rem;
+  font-size: 1.5vw;
+  vertical-align: middle;
 }
 
 .js-todoList {
-  height: 260px;
+  height: 50vw;
   overflow: hidden;
   margin: 0;
+  padding: 0 20px 0;
 }
 
 li {
   display: inline-block;
-  margin: 10px 20px;
+  margin: 0.5vw 1vw;
+  animation: fadeIn 0.5s linear;
 }
 
 body {
-  min-width: 650px;
+  animation: fadeIn 1s linear;
+  overflow: hidden;
+  min-width: 400px;
   background-color: #353b48;
   color: white;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   text-align: center;
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
@@ -94,15 +111,6 @@ body {
 
 .showing {
   display: block;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .bgImage {

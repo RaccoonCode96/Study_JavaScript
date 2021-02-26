@@ -17,7 +17,6 @@ const COORDS = 'coords';
 function getWeather(lat, lon) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`) // 백틱 조심
     .then((response) => {
-    // console.log(response.json())
     return response.json();
     })
     .then((json) => {
